@@ -13,6 +13,18 @@ public class Producto {
     private String nombre;
     private double precio;
     private Long categoriaId; // Referencia a Categoria
+    
+    // Constructor
+    public Producto(Long id, String nombre, double precio, Long categoriaId) {
+    	this.id = id;
+    	this.nombre = nombre;
+    	this.precio = precio;
+    	this.categoriaId = categoriaId;
+    }
+    
+    public Producto() {
+    	
+    }
 
     // Getters y Setters
     public Long getId() {

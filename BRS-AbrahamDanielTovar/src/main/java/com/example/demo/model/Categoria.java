@@ -11,6 +11,16 @@ public class Categoria {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nombre;
+    
+    // Constructor
+    public Categoria(Long id, String nombre) {
+    	this.id = id;
+    	this.nombre = nombre;
+    }
+    
+    public Categoria() {
+    	
+    }
 
     // Getters y Setters
     public Long getId() {
